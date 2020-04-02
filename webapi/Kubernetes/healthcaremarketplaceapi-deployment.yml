@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: healthcaremarketplaceapi-deployment
+  labels:
+    app: hmobile-app
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      name: healthcaremarketplaceapi-pod
+      app: hmobile-app
+  template:
+    metadata:
+      labels:
+        name: healthcaremarketplaceapi-pod
+        app: hmobile-app
+    spec:
+      containers:
+      - name: healthcaremarketplaceapi
+        image: sethuraj/healthcaremarketplaceapi
+        ports:
+          - containerPort: 80
+       

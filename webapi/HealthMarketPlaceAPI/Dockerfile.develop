@@ -1,0 +1,27 @@
+
+FROM mcr.microsoft.com/dotnet/core/sdk:2.2
+WORKDIR /app
+
+RUN apt-get update && \
+    apt-get install -y wget && \
+    apt-get install -y gnupg2 && \
+    wget -qO- https://deb.nodesource.com/setup_10.x | bash - && \
+    apt-get install -y build-essential nodejs
+
+
+ARG BUILD_CONFIGURATION=Debug
+ENV ASPNETCORE_ENVIRONMENT=Development
+ENV DOTNET_USE_POLLING_FILE_WATCHER=true
+EXPOSE 80
+
+WORKDIR /src
+COPY ["Kubernetes1/Kubernetes1.csproj", "Kubernetes1/"]
+
+RUN dotnet restore "Kubernetes1/Kubernetes1.csproj"
+COPY . .
+WORKDIR "/src/Kubernetes1"
+RUN dotnet build --no-restore "Kubernetes1.csproj" -c $BUILD_CONFIGURATION
+
+RUN echo "exec dotnet run --no-build --no-launch-profile -c $BUILD_CONFIGURATION --" > /entrypoint.sh
+
+ENTRYPOINT ["/bin/bash", "/entrypoint.sh"]

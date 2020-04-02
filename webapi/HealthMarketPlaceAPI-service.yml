@@ -1,0 +1,15 @@
+
+kind: Service
+apiVersion: v1
+metadata:
+  name: healthcaremarketplaceapi-service
+  labels:
+    name: healthcaremarketplaceapi-service
+    app: hmobile-app
+spec:
+  type: LoadBalancer
+  selector:
+    name: healthcaremarketplaceapi-pod
+    app: hmobile-app
+  ports:
+  - port: 80

@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2027
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HealthMarketPlaceAPI", "HealthMarketPlaceAPI\HealthMarketPlaceAPI.csproj", "{B1E47836-2EFE-44AC-A1D7-A8A6577E3EDE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B1E47836-2EFE-44AC-A1D7-A8A6577E3EDE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B1E47836-2EFE-44AC-A1D7-A8A6577E3EDE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B1E47836-2EFE-44AC-A1D7-A8A6577E3EDE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B1E47836-2EFE-44AC-A1D7-A8A6577E3EDE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4A5FAB49-A04A-4014-84F7-D3880F133CE5}
+	EndGlobalSection
+EndGlobal
