@@ -63,10 +63,6 @@ The grassroots open-source team behind AskCo19.com is excited to partner with Si
 
 ## Contributing DS Members
 
-**Team Leads (Contacts) : [Full Name](https://github.com/[github handle])(@slackHandle)**
-
-#### Other Members:
-
 |Name     |  Slack Handle   | 
 |---------|-----------------|
 |[Full Name](https://github.com/[github handle])| @johnDoe        |
