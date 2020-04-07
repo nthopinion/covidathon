@@ -65,6 +65,6 @@ The grassroots open-source team behind AskCo19.com is excited to partner with Si
 
 |Name     |  Slack Handle   | 
 |---------|-----------------|
-|[Full Name](https://github.com/[github handle])| @johnDoe        |
+|[Harini Perera](https://github.com/[harini-perera])| @johnDoe        |
 |[Full Name](https://github.com/[github handle]) |     @janeDoe    |
 
