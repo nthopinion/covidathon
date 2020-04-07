@@ -106,8 +106,9 @@ npm install npm@latest -g
 git clone git@github.com:nthopinion/covidathon.git
 ```
 
-3. To setup the `api`, check the [README](/webapi) inside the `api` folder.
-4. To setup the `client`, check the [README](/webapp) inside the `client` folder.
+3. To setup the `api`, check the [README](/webapi) inside the `webapi` folder.
+4. To setup the `client`, check the [README](/webapp) inside the `webapp` folder.
+5. To setup the `datascience`, check the [README](/datascience) inside the `datascience` folder.
 
 <!-- TEST
 TODO: Add more to the testing workflow: how to write a test, where, etc.
