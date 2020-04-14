@@ -1,20 +1,25 @@
+/*
+Implements EIP20 token standard: https://github.com/ethereum/EIPs/blob/master/EIPS/eip-20.md
+.*/
+
+
 pragma solidity ^0.4.21;
 
 import "./EIP20Interface.sol";
 
 
-contract NthopinionToken is EIP20Interface {
+contract ASK is EIP20Interface {
 
     uint256 constant private MAX_UINT256 = 2**256 - 1;
     mapping (address => uint256) public balances;
     mapping (address => mapping (address => uint256)) public allowed;
-  
-  
+ 
+ 
     string public name;                  
-    uint8 public decimals;                
-    string public symbol;              
+    uint8 public decimals;                //How many decimals to show.
+    string public symbol;                 //An identifier: eg SBX
 
-    function NthopinionToken(
+    function ASK(
         uint256 _initialAmount,
         string _tokenName,
         uint8 _decimalUnits,
